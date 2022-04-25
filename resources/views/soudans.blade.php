@@ -3,7 +3,7 @@
 
 @can('admin')
 
-<p class="text-center h1 text-muted lead">相談予約一覧</p>
+<p class="text-center h1 text-muted lead">相談予約一覧あああ</p>
 
 @if (count($soudans) > 0)
     <div class="card-body mx-5">
