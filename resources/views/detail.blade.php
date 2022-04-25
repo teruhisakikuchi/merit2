@@ -73,7 +73,7 @@
                         
             <!-- 相談: 編集ボタン -->
                 <a href="{{ url('soudansedit/'.$soudan->id) }}">
-                    <button type="submit" class="btn btn-success">編集・事件受任</button>
+                    <button type="submit" class="btn btn-outline-success">編集・事件受任</button>
                 </a>
 
     </div>
@@ -81,4 +81,3 @@
 @endcan
     
 @endsection
-

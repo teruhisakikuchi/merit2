@@ -10,7 +10,7 @@ class Task extends Model
     use HasFactory;
     
     public function soudan()
-{
-    return $this->belongsTo(Soudan::class);
-}
+    {
+        return $this->belongsTo(Soudan::class);
+    }
 }

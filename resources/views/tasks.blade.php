@@ -54,7 +54,7 @@
                             <form action="{{ url('task/'.$task->id) }}" method="POST">
                                 @csrf
                                 @method('delete')
-                                <button type="submit" class="btn btn-danger" onclick='return confirm("削除しますか？");'>
+                                <button type="submit" class="btn btn-outline-danger" onclick='return confirm("削除しますか？");'>
                                     削除
                                 </button>
                             </form>
@@ -63,7 +63,7 @@
                         <!--  編集ボタン -->
                         <td>
                         <a href="{{ url('tasksedit/'.$task->id) }}">
-                            <button type="submit" class="btn btn-secondary">タスク編集</button>
+                            <button type="submit" class="btn btn-outline-dark">タスク編集</button>
                         </a>
                         </td>
 

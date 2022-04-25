@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Soudan;
 use App\Models\Task;
 use Validator;
 use Auth;
@@ -26,7 +27,7 @@ class TaskController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(Task $soudan)
+    public function create(Soudan $soudan)
     {
         return view('taskscreate', ['soudan' => $soudan]);
     }

@@ -14,8 +14,7 @@
                 <th>相談予約日</th>
                 <th>名前</th>
                 <th>相談分野</th>
-                <th>受任ステータス</th>
-                
+                <th>案件ステータス</th>
             </tr>
             </thead>
             
@@ -38,7 +37,7 @@
                             <div>{{ $soudan->field }}</div>
                         </td>
                         
-                        <!-- 受任ステータス -->
+                        <!-- 案件ステータス -->
                         <td class="table-text">
                             <div>{{ $soudan->status }}</div>
                         </td>
@@ -48,7 +47,7 @@
                             <form action="{{ url('soudan/'.$soudan->id) }}" method="POST">
                                 @csrf
                                 @method('delete')
-                                <button type="submit" class="btn btn-danger" onclick='return confirm("削除しますか？");'>
+                                <button type="submit" class="btn btn-outline-danger" onclick='return confirm("削除しますか？");'>
                                     削除
                                 </button>
                             </form>
@@ -57,14 +56,14 @@
                         <!-- 相談: 詳細ボタン -->
                         <td>
                             <a href="{{ url('detail/'.$soudan->id) }}">
-                                <button type="submit" class="btn btn-secondary">詳細</button>
+                                <button type="submit" class="btn btn-outline-dark">詳細</button>
                             </a>
                         </td>
                         
                         <!-- タスク登録ボタン -->
                         <td>
                             <a href="{{ url('taskscreate/'.$soudan->id) }}">
-                                <button type="submit" class="btn btn-success">タスク登録</button>
+                                <button type="submit" class="btn btn-outline-success">タスク登録</button>
                             </a>
                         </td>
                     </tr>
@@ -81,8 +80,7 @@
 
 @elsecan('user')
 
-<p class="text-center h1 text-muted lead">相談者新規入力</p>
-
+<p class="text-center h1 text-muted lead">相談内容送信画面（相談者用）</p>
 
 @if (session('message'))
     <div class="alert alert-danger text-center">
@@ -97,7 +95,7 @@
     <!-- ↑バリデーションエラーの表示に使用-->
 
     <!-- 相談登録フォーム -->
-    <form action="{{ url('soudans') }}" method="POST" class="form-horizontal row justify-content-center"><!-- グリッド -->
+    <form action="{{ url('soudans') }}" method="POST" class="form-horizontal row justify-content-center">
         @csrf
         
         <!-- 相談予約日 -->
@@ -150,4 +148,3 @@
 @endcan
 
 @endsection
-

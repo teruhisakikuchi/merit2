@@ -42,7 +42,7 @@
         <!-- 内容送信ボタン -->
         <div class="form-group col-md-8 p-2">
             <div class="col-sm-offset-3 col-sm-6">
-                <button type="submit" class="btn btn-primary">編集</button>
+                <button type="submit" class="btn btn-outline-primary">編集</button>
                 <a class="btn btn-link pull-right" href="{{ url('/t') }}">戻る</a>
 
             </div>

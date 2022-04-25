@@ -55,8 +55,6 @@ Route::group(['middleware' => 'auth'], function () {
     
     //タスク削除処理
     Route::delete('/task/{task}', [TaskController::class, 'destroy']);
-    
-    
 
 });
 

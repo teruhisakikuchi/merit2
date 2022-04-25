@@ -85,8 +85,7 @@
                 
                 
                 
- 	            <p class="text-center h1 text-muted lead mt-2">事件受任・事件詳細編集</p>
-                
+ 	            <p class="text-center h1 text-muted lead mt-2">事件受任・詳細編集</p>
                 
                  <!-- jiken_name -->
                 <div class="form-group col-md-6 p-2">
@@ -136,7 +135,7 @@
 
                 <!-- 編集 ボタン/戻る ボタン -->
 	                <div class="well well-sm">
-	                    <button type="submit" class="btn btn-primary">編集</button>
+	                    <button type="submit" class="btn btn-outline-primary">編集</button>
 	                    <a class="btn btn-link pull-right" href="{{ url('detail/'.$soudan->id) }}">戻る</a>
 	                </div>
                 <!--/ 編集 ボタン/戻る ボタン -->
