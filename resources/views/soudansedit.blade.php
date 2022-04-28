@@ -3,7 +3,7 @@
 
 @can('admin')
 
-	<p class="text-center h1 text-muted lead">相談詳細編集</p>
+	<p class="text-center h1 text-muted lead">相談内容の編集</p>
 
     <div class="row container mx-5">
         <div class="col-md-12">
@@ -85,7 +85,7 @@
                 
                 
                 
- 	            <p class="text-center h1 text-muted lead mt-2">事件受任・詳細編集</p>
+ 	            <p class="text-center h1 text-muted lead mt-2">受任事件の詳細</p>
                 
                  <!-- jiken_name -->
                 <div class="form-group col-md-6 p-2">

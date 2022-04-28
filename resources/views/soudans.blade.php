@@ -80,7 +80,7 @@
 
 @elsecan('user')
 
-<p class="text-center h1 text-muted lead">相談内容送信画面（相談者用）</p>
+<p class="text-center h1 text-muted lead">相談内容フォーム</p>
 
 @if (session('message'))
     <div class="alert alert-danger text-center">
