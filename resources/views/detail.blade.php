@@ -44,6 +44,63 @@
                 <label for="field" class="col-sm-3 control-label">相談分野</label>
                 <div class="form-control">{{$soudan->field}}</div>
             </div>
+            
+        @if($soudan->field === "離婚")    
+            
+            <!-- 離婚意向（相談者） -->
+            <div class="form-group col-md-6 p-2">
+                <label for="rikonx" class="col-sm-3 control-label">離婚意向（相談者）</label>
+                <div class="form-control">{{$soudan->rikonx}}</div>
+            </div>
+            
+            <!-- 離婚意向（相手方） -->
+            <div class="form-group col-md-6 p-2">
+                <label for="rikony" class="col-sm-3 control-label">離婚意向（相手方）</label>
+                <div class="form-control">{{$soudan->rikony}}</div>
+            </div>
+            
+            <!-- 子どもの人数 -->
+            <div class="form-group col-md-6 p-2">
+                <label for="child" class="col-sm-3 control-label">子どもの人数</label>
+                <div class="form-control">{{$soudan->child}}</div>
+            </div>
+            
+            <!-- 親権の希望 -->
+            <div class="form-group col-md-6 p-2">
+                <label for="shinken" class="col-sm-3 control-label">親権の希望</label>
+                <div class="form-control">{{$soudan->shinken}}</div>
+            </div>
+            
+        @endif    
+
+        @if($soudan->field === "相続")    
+            
+            <!-- 本人との続柄 -->
+            <div class="form-group col-md-6 p-2">
+                <label for="zokugara" class="col-sm-3 control-label">本人との続柄</label>
+                <div class="form-control">{{$soudan->zokugara}}</div>
+            </div>
+            
+            <!-- 遺言書の有無 -->
+            <div class="form-group col-md-6 p-2">
+                <label for="igon" class="col-sm-3 control-label">遺言書の有無</label>
+                <div class="form-control">{{$soudan->igon}}</div>
+            </div>
+            
+            <!-- 協議の有無 -->
+            <div class="form-group col-md-6 p-2">
+                <label for="kyougi" class="col-sm-3 control-label">協議の有無</label>
+                <div class="form-control">{{$soudan->kyougi}}</div>
+            </div>
+            
+            <!-- 特別の事情 -->
+            <div class="form-group col-md-6 p-2">
+                <label for="jijou" class="col-sm-3 control-label">特別の事情</label>
+                <div class="form-control">{{$soudan->jijou}}</div>
+            </div>
+            
+        @endif    
+
     
             <!-- 相手方の名前 -->
             <div class="form-group col-md-6 p-2">

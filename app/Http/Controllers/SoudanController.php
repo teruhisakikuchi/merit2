@@ -56,9 +56,17 @@ class SoudanController extends Controller
         $soudan = new Soudan;
         $soudan->user_id =       Auth::id();
         $soudan->soudan_date =   $request->soudan_date;
+        $soudan->field =         $request->field;
+        $soudan->rikonx =        $request->rikonx;
+        $soudan->rikony =        $request->rikony;
+        $soudan->child =         $request->child;
+        $soudan->shinken =       $request->shinken;
+        $soudan->zokugara =      $request->zokugara;
+        $soudan->igon =          $request->igon;
+        $soudan->kyougi =        $request->kyougi;
+        $soudan->jijou =         $request->jijou;
         $soudan->y_name =        $request->y_name;
         $soudan->y_address =     $request->y_address;
-        $soudan->field =         $request->field;
         $soudan->summary =       $request->summary;
         $soudan->question =      $request->question;
         $soudan->jiken_name =    $request->jiken_name;
@@ -118,9 +126,17 @@ class SoudanController extends Controller
 
         $soudan = Soudan::find($request->id);
         $soudan->soudan_date = $request->soudan_date;
+        $soudan->field =       $request->field;
+        $soudan->rikonx =      $request->rikonx;
+        $soudan->rikony =      $request->rikony;
+        $soudan->child =       $request->child;
+        $soudan->shinken =     $request->shinken;
+        $soudan->zokugara =    $request->zokugara;
+        $soudan->igon =        $request->igon;
+        $soudan->kyougi =      $request->kyougi;
+        $soudan->jijou =       $request->jijou;
         $soudan->y_name =      $request->y_name;
         $soudan->y_address =   $request->y_address;
-        $soudan->field =       $request->field;
         $soudan->summary =     $request->summary;
         $soudan->question =    $request->question;
         $soudan->jiken_name =    $request->jiken_name;

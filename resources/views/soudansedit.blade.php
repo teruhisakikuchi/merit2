@@ -55,6 +55,70 @@
                 </div>
                 <!--/ field -->
                 
+            @if($soudan->field === "離婚")
+                
+                <!-- rikonx -->
+                <div class="form-group col-md-6 p-2">
+                    <label for="rikonx">離婚意向（相談者）</label>
+                    <input type="text" name="rikonx" class="form-control" id="rikonx" value="{{$soudan->rikonx}}">
+                </div>
+                <!--/ rikonx -->
+                
+                <!-- rikony -->
+                <div class="form-group col-md-6 p-2">
+                    <label for="rikony">離婚意向（相手方）</label>
+                    <input type="text" name="rikony" class="form-control" id="rikony" value="{{$soudan->rikony}}">
+                </div>
+                <!--/ rikony -->
+                
+                <!-- cjild -->
+                <div class="form-group col-md-6 p-2">
+                    <label for="child">子どもの人数</label>
+                    <input type="text" name="child" class="form-control" id="child" value="{{$soudan->child}}">
+                </div>
+                <!--/ child -->
+                
+                <!-- shinken -->
+                <div class="form-group col-md-6 p-2">
+                    <label for="shinken">親権の希望</label>
+                    <input type="text" name="shinken" class="form-control" id="shinken" value="{{$soudan->shinken}}">
+                </div>
+                <!--/ shinken -->
+                
+            @endif
+
+            @if($soudan->field === "相続")
+                
+                <!-- zokugara -->
+                <div class="form-group col-md-6 p-2">
+                    <label for="zokugara">本人との続柄</label>
+                    <input type="text" name="zokugara" class="form-control" id="zokugara" value="{{$soudan->zokugara}}">
+                </div>
+                <!--/ zokugara -->
+                
+                <!-- igon -->
+                <div class="form-group col-md-6 p-2">
+                    <label for="igon">遺言書の有無</label>
+                    <input type="text" name="igon" class="form-control" id="igon" value="{{$soudan->igon}}">
+                </div>
+                <!--/ igon -->
+                
+                <!-- kyougi -->
+                <div class="form-group col-md-6 p-2">
+                    <label for="kyougi">協議の有無</label>
+                    <input type="text" name="kyougi" class="form-control" id="kyougi" value="{{$soudan->kyougi}}">
+                </div>
+                <!--/ kyougi -->
+                
+                <!-- jijou -->
+                <div class="form-group col-md-6 p-2">
+                    <label for="jijou">特別の事情</label>
+                    <input type="text" name="jijou" class="form-control" id="jijou" value="{{$soudan->jijou}}">
+                </div>
+                <!--/ jijou -->
+                
+            @endif
+                
                 <!-- y_name -->
                 <div class="form-group col-md-6 p-2">
                     <label for="y_name">相手方の名前</label>
